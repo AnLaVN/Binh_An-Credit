@@ -7,44 +7,56 @@
     <link rel="icon" href="image/credit-card.png" type="image/png"/>
 </head>
 <body>
-    <div class="infor">
+    <div id="toggle">
+        <i class="indicator"></i>
+    </div>
+    <div class="InforCard">
         <img id="Avatar" src="image/PS21776.JPG"/>
         <div id="Name">La Đặng Bình An</div>
         <div id="Description">Learning at FPT Polytechnic</div>
         <a class="Tag" href="mailto:binhan29122003@gmail.com">
-            <img src="image/mail.png" alt="Email Logo">
+            <img class="dark" src="image/mail.png" alt="Email Logo">
+            <img class="light" src="image/gmail.png" alt="Email Logo">
             <div>Private Email</div>
         </a>
         <a class="Tag" href="mailto:anldbps21776@fpt.edu.vn">
-            <img src="image/mail.png" alt="Email Logo">
+            <img class="dark" src="image/mail.png" alt="Email Logo">
+            <img class="light" src="image/gmail.png" alt="Email Logo">
             <div>Edu Email</div>
         </a>
         <a class="Tag" href="tel:0378001834">
-            <img src="image/call.png" alt="PhoneNumber Logo">
+            <img class="dark" src="image/call.png" alt="PhoneNumber Logo">
+            <img class="light" src="image/call-color.png" alt="PhoneNumber Logo">
             <div>Phone Number 1</div>
         </a>
         <a class="Tag" href="tel:0352519751">
-            <img src="image/call.png" alt="PhoneNumber Logo">
+            <img class="dark" src="image/call.png" alt="PhoneNumber Logo">
+            <img class="light" src="image/call-color.png" alt="PhoneNumber Logo">
             <div>Phone Number 2</div>
         </a>
         <a class="Tag" href="https://github.com/AnLaVN">
-            <img src="image/github.png" alt="Github Logo">
+            <img class="dark" src="image/github.png" alt="Github Logo">
+            <img class="light" src="image/github-color.png" alt="Github Logo">
             <div>Github</div>
         </a>
         <a class="Tag" href="https://www.facebook.com/ladangbinhan2003">
-            <img src="image/facebook.png" alt="Facebook Logo">
+            <img class="dark" src="image/facebook.png" alt="Facebook Logo">
+            <img class="light" src="image/facebook-color.png" alt="Facebook Logo">
             <div>Facebook</div>
         </a>
         <a class="Tag" href="https://m.me/ladangbinhan2003">
-            <img src="image/messenger.png" alt="Github Logo">
+            <img class="dark" src="image/messenger.png" alt="Messenger Logo">
+            <img class="light" src="image/messenger-color.png" alt="Messenger Logo">
             <div>Messenger</div>
         </a>
         <a class="Tag" href="http://zaloapp.com/qr/p/1crk67zquornc">
-            <img src="image/telephone.png" alt="Zalo Logo">
+            <img class="dark" src="image/telephone.png" alt="Zalo Logo">
+            <img class="light" src="image/telephone-color.png" alt="Zalo Logo">
             <div>Zalo</div>
         </a>
         <a class="Tag" onclick="copy()">
-            <img src="image/card-color.png" alt="Bank Logo">
+            <img class="dark" src="image/card.png" alt="Bank Logo">
+            <img class="light" src="image/card-color.png" alt="Bank Logo">
             <div>HD Bank</div>
         </a>
         <div id="Credit1">Digital Business Card</div>
@@ -54,6 +66,14 @@
         function copy(){
             navigator.clipboard.writeText(154704070021829);
             alert("You just copied the bank number to the clipboard!\nBạn vừa sao chép STK vào bộ nhớ tạm !");}
+    </script>
+    <script>
+        const body = document.querySelector('body');
+        const toggle = document.getElementById('toggle');
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            body.classList.toggle('active');
+        }
     </script>
 </body>
 </html>
