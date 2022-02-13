@@ -7,7 +7,7 @@ body{
     transition: 1s;
 }
 body.active{
-    background-image: linear-gradient(to right, #5d5a6e, #585669, #535264, #4e4e60, #494a5b, #444656, #3f4251, #3a3e4c, #343845, #2d333e, #282d38, #222831);
+    background-image: linear-gradient(to right, #5d5a6e, #585669, #535264, #4e4e60, #494a5b, #474859, #454757, #434555, #434555, #434555, #434555, #434555);
 }
 /* Theme button */
 #toggle{
