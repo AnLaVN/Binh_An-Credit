@@ -80,6 +80,8 @@ div#Name{
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
+    text-shadow: 1px 1px 0px #ba83ca,
+        2px 2px 0px #d16ba5;
 }
 div#Description{
     text-align: center;
@@ -87,6 +89,9 @@ div#Description{
     font-size: 30px;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 500;
+    text-shadow: -1px -1px 0px #c777b9,
+        1px 1px 0px #c777b9,
+        2px 2px 0px #d16ba5;
 }
 a.Tag{
     position: relative;
@@ -155,9 +160,11 @@ body.active a.Tag>div{
 }
 body.active div#Name{
     color: #aa8fd8;
+    text-shadow: -1px -1px 0px white;
 }
 body.active div#Description{
-    color: #CF9EAC
+    color: #CF9EAC;
+    text-shadow: -1px -1px 0px white;
 }
 body.active div#Credit1{
     color: darkgray;
