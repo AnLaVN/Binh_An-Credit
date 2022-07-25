@@ -164,11 +164,11 @@ body.active a.Tag>div{
     color: darkgrey;
 }
 body.active div#Name{
-    color: #aa8fd8;
+    color: #BFFCF9;
     text-shadow: -1px -1px 0px white;
 }
 body.active div#Description{
-    color: #CF9EAC;
+    color: #BDA5AB;
     text-shadow: -1px -1px 0px white;
 }
 body.active div#Credit1{
